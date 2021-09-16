@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<GridPane minHeight="335.0" minWidth="530.0" prefHeight="745.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.machine.techprog.Main">
+    <fx:define>
+        <ToggleGroup fx:id="Colours" />
+    </fx:define>
+    <HBox GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="0">
+        <MenuBar fx:id="bar" minWidth="530" prefHeight="25.0" prefWidth="628.0">
+            <Menu fx:id="file" text="Файл">
+                <Menu fx:id="newFile" text="Новый файл">
+                    <MenuItem fx:id="newFileLineMenu" text="Лента">
+                    </MenuItem>
+                    <MenuItem fx:id="newFileAlgorithmMenu" text="Алгоритм">
+                    </MenuItem>
+                </Menu>
+                <Menu fx:id="open" text="Открыть">
+                    <Menu fx:id="includeAlgorithmMenu" text="Встроенные алгоритмы">
+                        <MenuItem fx:id="plusMenu" text="Сложение">
+                        </MenuItem>
+                        <MenuItem fx:id="multiplyMenu" text="Умножения">
+                        </MenuItem>
+                    </Menu>
+                    <MenuItem fx:id="fileIncludeMenu" text="Файл">
+                    </MenuItem>
+                </Menu>
+                <Menu fx:id="save" text="Сохранить">
+                    <MenuItem fx:id="saveLineMenu" text="Лента">
+                    </MenuItem>
+                    <MenuItem fx:id="saveAlgorithmMenu" text="Алгоритм">
+                    </MenuItem>
+                </Menu>
+            </Menu>
+            <Menu fx:id="infoAboutSystemMenu" text="Сведения о системе">
+            </Menu>
+            <Menu fx:id="aboutProgramMenu" text="О программе">
+            </Menu>
+            <Menu fx:id="optionsMenu" text="Настройки">
+            </Menu>
+        </MenuBar>
+    </HBox>
+    <HBox maxHeight="125" GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="1">
+        <VBox prefHeight="120.0" prefWidth="624.0">
+
+            <Label prefHeight="28.0" prefWidth="74.0" text="Лента">
+            <VBox.margin>
+               <Insets left="1.0" right="25.0" />
+            </VBox.margin>
+            <padding>
+               <Insets left="17.0" top="15.0" />
+            </padding></Label>
+            <ScrollPane prefHeight="82.0" prefWidth="624.0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="line" maxHeight="-Infinity" minHeight="75.0" minWidth="-Infinity" prefHeight="85.0" prefWidth="1464.0">
+                    <columns>
+                        <TableColumn fx:id="number0" maxWidth="20" text="0">
+                        </TableColumn>
+                        <TableColumn fx:id="number1" maxWidth="20" text="1" />
+                        <TableColumn fx:id="number2" maxWidth="20" text="2" />
+                        <TableColumn fx:id="number3" maxWidth="20" text="3" />
+                        <TableColumn fx:id="number4" maxWidth="20" text="4" />
+                        <TableColumn fx:id="number5" maxWidth="20" text="5" />
+                        <TableColumn fx:id="number6" maxWidth="20" text="6" />
+                        <TableColumn fx:id="number7" maxWidth="20" text="7" />
+                        <TableColumn fx:id="number8" maxWidth="20" text="8" />
+                        <TableColumn fx:id="number9" maxWidth="20" text="9" />
+                        <TableColumn fx:id="number10" maxWidth="20" text="10" />
+                        <TableColumn fx:id="number11" maxWidth="20" text="11" />
+                        <TableColumn fx:id="number12" maxWidth="20" text="12" />
+                        <TableColumn fx:id="number13" maxWidth="20" text="13" />
+                        <TableColumn fx:id="number14" maxWidth="20" text="14" />
+                        <TableColumn fx:id="number15" maxWidth="20" text="15" />
+                        <TableColumn fx:id="number16" maxWidth="20" text="16" />
+                        <TableColumn fx:id="number17" maxWidth="20" text="17" />
+                        <TableColumn fx:id="number18" maxWidth="20" text="18" />
+                        <TableColumn fx:id="number19" maxWidth="20" text="19" />
+                        <TableColumn fx:id="number20" maxWidth="20" text="20" />
+                        <TableColumn fx:id="number21" maxWidth="20" text="21" />
+                        <TableColumn fx:id="number22" maxWidth="20" text="22" />
+                        <TableColumn fx:id="number23" maxWidth="20" text="23" />
+                        <TableColumn fx:id="number24" maxWidth="20" text="24" />
+                        <TableColumn fx:id="number25" maxWidth="20" text="25" />
+                        <TableColumn fx:id="number26" maxWidth="40.0" prefWidth="20.0" text="26" />
+                        <TableColumn fx:id="number27" maxWidth="20" minWidth="0.0" prefWidth="20.0" text="27" />
+                        <TableColumn fx:id="number28" maxWidth="20" text="28" />
+                        <TableColumn fx:id="number29" maxWidth="20" text="29" />
+                        <TableColumn fx:id="number30" maxWidth="20" text="30" />
+                        <TableColumn fx:id="number31" maxWidth="20" text="31" />
+                        <TableColumn fx:id="number32" maxWidth="20" text="32" />
+                        <TableColumn fx:id="number33" maxWidth="20" text="33" />
+                        <TableColumn fx:id="number34" maxWidth="20" text="34" />
+                        <TableColumn fx:id="number35" maxWidth="20" text="35" />
+                        <TableColumn fx:id="number36" maxWidth="20" text="36" />
+                        <TableColumn fx:id="number37" maxWidth="20" text="37" />
+                        <TableColumn fx:id="number38" maxWidth="20" text="38" />
+                        <TableColumn fx:id="number39" maxWidth="20" text="39" />
+                        <TableColumn fx:id="number40" maxWidth="20" text="40" />
+                        <TableColumn fx:id="number41" maxWidth="20" text="41" />
+                        <TableColumn fx:id="number42" maxWidth="20" text="42" />
+                        <TableColumn fx:id="number43" maxWidth="20" text="43" />
+                        <TableColumn fx:id="number44" maxWidth="20" text="44" />
+                        <TableColumn fx:id="number45" maxWidth="20" text="45" />
+                        <TableColumn fx:id="number46" maxWidth="20" text="46" />
+                        <TableColumn fx:id="number47" maxWidth="20" text="47" />
+                        <TableColumn fx:id="number48" maxWidth="20" text="48" />
+                        <TableColumn fx:id="number49" maxWidth="20" text="49" />
+                        <TableColumn fx:id="number50" maxWidth="20" text="50" />
+                        <TableColumn fx:id="number51" maxWidth="20" text="51" />
+                        <TableColumn fx:id="number52" maxWidth="20" text="52" />
+                        <TableColumn fx:id="number53" maxWidth="20" text="53" />
+                        <TableColumn fx:id="number54" maxWidth="20" text="54" />
+                        <TableColumn fx:id="number55" maxWidth="20" text="55" />
+                        <TableColumn fx:id="number56" maxWidth="20" text="56" />
+                        <TableColumn fx:id="number57" maxWidth="20" text="57" />
+                        <TableColumn fx:id="number58" maxWidth="20" text="58" />
+                        <TableColumn fx:id="number59" maxWidth="20" text="59" />
+                        <TableColumn fx:id="number60" maxWidth="20" text="60" />
+                        <TableColumn fx:id="number61" maxWidth="20" text="61" />
+                        <TableColumn fx:id="number62" maxWidth="20" text="62" />
+                        <TableColumn fx:id="number63" maxWidth="20" text="63" />
+                        <TableColumn fx:id="number64" maxWidth="20" text="64" />
+                        <TableColumn fx:id="number65" maxWidth="20" text="65" />
+                        <TableColumn fx:id="number66" maxWidth="20" text="66" />
+                        <TableColumn fx:id="number67" maxWidth="20" text="67" />
+                        <TableColumn fx:id="number68" maxWidth="20" text="68" />
+                        <TableColumn fx:id="number69" maxWidth="20" text="69" />
+                        <TableColumn fx:id="number70" maxWidth="20" text="70" />
+                        <TableColumn fx:id="number71" maxWidth="20" text="71" />
+                        <TableColumn fx:id="number72" maxWidth="20" text="72" />
+                        <TableColumn fx:id="number73" maxWidth="20" text="73" />
+                        <TableColumn fx:id="number74" maxWidth="20" text="74" />
+                        <TableColumn fx:id="number75" maxWidth="20" text="75" />
+                        <TableColumn fx:id="number76" maxWidth="20" text="76" />
+                        <TableColumn fx:id="number77" maxWidth="20" text="77" />
+                        <TableColumn fx:id="number78" maxWidth="20" text="78" />
+                        <TableColumn fx:id="number79" maxWidth="20" text="79" />
+                        <TableColumn fx:id="number80" maxWidth="20" text="80" />
+                        <TableColumn fx:id="number81" maxWidth="20" text="81" />
+                        <TableColumn fx:id="number82" maxWidth="20" text="82" />
+                        <TableColumn fx:id="number83" maxWidth="20" text="83" />
+                        <TableColumn fx:id="number84" maxWidth="20" text="84" />
+                        <TableColumn fx:id="number85" maxWidth="20" text="85" />
+                        <TableColumn fx:id="number86" maxWidth="20" text="86" />
+                        <TableColumn fx:id="number87" maxWidth="20" text="87" />
+                        <TableColumn fx:id="number88" maxWidth="20" text="88" />
+                        <TableColumn fx:id="number89" maxWidth="20" text="89" />
+                        <TableColumn fx:id="number90" maxWidth="20" text="90" />
+                        <TableColumn fx:id="number91" maxWidth="20" text="91" />
+                        <TableColumn fx:id="number92" maxWidth="20" text="92" />
+                        <TableColumn fx:id="number93" maxWidth="20" text="93" />
+                        <TableColumn fx:id="number94" maxWidth="20" text="94" />
+                        <TableColumn fx:id="number95" maxWidth="20" text="95" />
+                        <TableColumn fx:id="number96" maxWidth="20" text="96" />
+                        <TableColumn fx:id="number97" maxWidth="20" text="97" />
+                        <TableColumn fx:id="number98" maxWidth="20" text="98" />
+                        <TableColumn fx:id="number99" maxWidth="20" text="99" />
+                        <TableColumn fx:id="number100" maxWidth="25" text="100" />
+                    </columns>
+                </TableView>
+            </ScrollPane>
+            <padding>
+                <Insets bottom="15.0" />
+            </padding>
+        </VBox>
+    </HBox>
+    <HBox GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="2">
+        <VBox prefHeight="272.0" prefWidth="628.0">
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="118.0">Карта состояний</Label>
+            <ScrollPane>
+                <TableView fx:id="mapCondition" prefHeight="425.0" prefWidth="624.0">
+                </TableView>
+            </ScrollPane>
+            <padding>
+                <Insets bottom="35" />
+            </padding>
+        </VBox>
+    </HBox>
+    <HBox prefHeight="153.0" prefWidth="624.0" GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="3">
+        <VBox>
+            <Label>Режимы работы</Label>
+            <HBox>
+                <VBox prefHeight="80.0" prefWidth="128.0">
+                    <RadioButton fx:id="step">Пошаговый</RadioButton>
+                    <RadioButton fx:id="auto">Автоматически</RadioButton>
+                    <RadioButton fx:id="onlyResult">Только результат</RadioButton>
+                </VBox>
+                <VBox>
+                    <padding>
+                        <Insets bottom="10" />
+                    </padding>
+                    <Label text="Время задержки">
+                  <padding>
+                     <Insets bottom="15.0" />
+                  </padding></Label>
+                    <Slider fx:id="timeDelay" max="1" min="0" prefHeight="37.0" prefWidth="98.0" showTickLabels="true" showTickMarks="true" />
+                </VBox>
+                <padding>
+                    <Insets left="25" top="15" />
+                </padding>
+                <padding>
+                    <Insets left="25" top="15" />
+                </padding>
+            </HBox>
+        </VBox>
+        <VBox prefHeight="153.0" prefWidth="350.0">
+            <Label text="Работа над операндами">
+            <padding>
+               <Insets bottom="15.0" />
+            </padding></Label>
+            <HBox>
+                <VBox prefHeight="68.0" prefWidth="134.0">
+                    <Label text="Способ ввода">
+                  <padding>
+                     <Insets bottom="15.0" />
+                  </padding></Label>
+                    <RadioButton fx:id="onTheLineInput" text="На ленте">
+                  <padding>
+                     <Insets bottom="7.0" />
+                  </padding></RadioButton>
+                    <RadioButton fx:id="numberedInput" text="Числовой">Числовой</RadioButton>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+                </VBox>
+                <VBox prefHeight="68.0" prefWidth="179.0">
+                    <Label text="Операнды">
+                  <padding>
+                     <Insets bottom="15.0" />
+                  </padding></Label>
+                    <HBox prefHeight="25.0" prefWidth="178.0">
+                        <Label text="A:">
+                     <padding>
+                        <Insets right="3.0" />
+                     </padding></Label>
+                        <TextField fx:id="aValueInputted" maxHeight="21" maxWidth="55">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding></TextField>
+                        <Button fx:id="clearValuesOperands" maxHeight="25.0" maxWidth="83.0" prefHeight="25.0" prefWidth="83.0" text="Очистить">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></Button>
+                  <padding>
+                     <Insets bottom="7.0" />
+                  </padding>
+                    </HBox>
+                    <HBox>
+                        <Label text="B:">
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding></Label>
+                        <TextField fx:id="bValueInputted" maxHeight="21" maxWidth="55" />
+                        <Button fx:id="applyValuesOperands" maxHeight="25.0" maxWidth="86.0" prefHeight="25.0" prefWidth="86.0" text="Применить">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></Button>
+                    </HBox>
+                </VBox>
+            </HBox>
+        </VBox>
+        <padding>
+            <Insets left="25" right="15" />
+        </padding>
+    </HBox>
+
+    <Line fx:id="colourLine" endX="619.0" endY="331" startY="331" strokeWidth="6" GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="8" />
+    <HBox prefHeight="153.0" prefWidth="624.0" GridPane.RowSpan="1" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.rowIndex="4">
+
+            <HBox prefHeight="138.0" prefWidth="304.0">
+                <Button fx:id="showTrace" maxHeight="25.0" maxWidth="113.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="113.0" text="Показать трассу">
+            <HBox.margin>
+               <Insets left="25.0" right="10.0" />
+            </HBox.margin></Button>
+                <Button fx:id="saveTrace" maxHeight="25.0" maxWidth="86.0" minWidth="-Infinity" prefHeight="25.0" text="Сохранить трассу">
+            <HBox.margin>
+               <Insets left="15.0" right="35.0" />
+            </HBox.margin></Button>
+         <HBox.margin>
+            <Insets top="15.0" />
+         </HBox.margin>
+            </HBox>
+            <Button fx:id="stepForward" maxHeight="25.0" maxWidth="86.0" prefHeight="25.0" prefWidth="86.0" text="Шаг">
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+         <HBox.margin>
+            <Insets right="15.0" top="15.0" />
+         </HBox.margin></Button>
+            <Button fx:id="stop" maxHeight="25.0" maxWidth="86.0" prefHeight="25.0" prefWidth="86.0" text="Стоп">
+         <HBox.margin>
+            <Insets right="15.0" top="15.0" />
+         </HBox.margin></Button>
+            <Button fx:id="start" maxHeight="25.0" maxWidth="86.0" prefHeight="25.0" prefWidth="86.0" text="Старт">
+         <HBox.margin>
+            <Insets top="15.0" />
+         </HBox.margin></Button>
+
+    </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
